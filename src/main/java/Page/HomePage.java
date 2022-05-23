@@ -35,7 +35,6 @@ public class HomePage extends BasePage {
         return this;
     }
 
-
     public ProductListPage search(String text){
         write(searchTextBox,text);
         enter(searchTextBox);

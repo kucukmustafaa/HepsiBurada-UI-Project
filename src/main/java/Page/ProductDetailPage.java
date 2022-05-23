@@ -54,7 +54,6 @@ public class ProductDetailPage extends BasePage {
         return this;
     }
 
-
     public ProductDetailPage addToBasket(){
         String productDetailPageProductName=getText(productNameElement).trim();
         String productDetailPageProductPrice=getTextWithJS(productPriceElement).trim();
