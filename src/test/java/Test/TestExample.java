@@ -18,7 +18,15 @@ public class TestExample extends BaseTest {
                     gotoLoginPage().
                     isLoginPageOpen().
                     login("","").
-                    isUserLogin();
+                    isUserLogin().
+                    search("bilgisayar").
+                    controlProductListPageSuccessOpen("bilgisayar").
+                    clickRandomProduct().
+                    controlProductDetailPageOpenSuccessfully().
+                    addToBasket().
+                    controlProductAddedToBasketMessage().
+                    addToBasketFromOtherStore().
+                    goToBasketPage();
 
     }
 

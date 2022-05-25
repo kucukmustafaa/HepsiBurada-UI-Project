@@ -32,6 +32,7 @@ public class ProductListPage extends BasePage {
     public ProductListPage controlProductListPageSuccessOpen(String expectedText){
         String actualSearchResultText=getText(searchResultText);
         Assert.assertTrue(actualSearchResultText.equals(expectedText));
+        logger.info("Ürün listeleme sayfası başarılı şekilde açılmıştır.");
         return this;
     }
 
@@ -89,6 +90,7 @@ public class ProductListPage extends BasePage {
     public ProductListPage controlSuccessAddedToBasketMessage(String expectedText){
         String actualText=getText(successfulAddedToCartMessage);
         Assert.assertTrue(actualText.trim().equals(expectedText));
+        logger.info("Ürün sepete eklendi mesjaı başarılı şekilde görülmüştür.");
         return this;
     }
 

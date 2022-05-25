@@ -10,9 +10,9 @@ public class OptionsManager {
     public static ChromeOptions getChromeOptions() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-       // options.addArguments("--kiosk");
+        options.addArguments("--kiosk");
         options.addArguments("--disable-notifications");
-      //  options.addArguments("--start-fullscreen");
+        options.addArguments("--start-fullscreen");
         return options;
     }
 

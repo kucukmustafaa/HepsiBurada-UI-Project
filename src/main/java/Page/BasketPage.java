@@ -40,10 +40,5 @@ public class BasketPage extends BasePage {
 
     }
 
-    @SuppressWarnings("unchecked")
-    public static <T extends List<?>> T cast(Object obj) {
-        return (T) obj;
-    }
-
 
 }

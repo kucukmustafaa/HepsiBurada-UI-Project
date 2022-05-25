@@ -5,11 +5,9 @@ import Util.DataStore;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import javax.xml.crypto.Data;
-import java.util.Arrays;
+
 
 public class ProductDetailPage extends BasePage {
 
